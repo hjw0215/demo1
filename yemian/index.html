@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<title>网站首页</title><base target="_blank" />
+<link rel="stylesheet" type="text/css" href="http://hovertree.com/texiao/js/1/css/style.css">
+<script type="text/javascript" src="http://hovertree.com/texiao/js/1/js/koala.min.1.5.js"></script>
+<script type="text/javascript">
+Qfast.add('widgets', { path: "http://hovertree.com/texiao/js/1/js/terminator2.2.min.js", type: "js", requires: ['fx'] });
+Qfast(false, 'widgets', function () {
+K.tabs({
+id: 'decoroll2', //焦点图包裹id
+conId: "decoimg_a2", //大图域包裹id
+tabId: "deconum2", //小圆点数字提示id
+tabTn: "a",
+conCn: '.decoimg_b2', //大图域配置class
+auto: 1, //自动播放 1或0
+effect: 'fade', //效果配置
+eType: 'mouseover', // 鼠标事件
+pageBt: true, //是否有按钮切换页码
+bns: ['.prev', '.next'], //前后按钮配置class
+interval: 3000// 停顿时间
+})
+})
+
+function show(n)
+{
+document.getElementById(n).style.display="block";
+ 
+}
+function hide(n)
+{
+document.getElementById(n).style.display="none";
+}
+</script>
+
+<style>
+a:hover{
+color: #FFA500;
+}
+a{cursor:pointer;color:white;font:"Lucida Console", Monaco, monospace}
+</style>
+</head>
+<body>
+<div class="num_a2" style="background-color:#2857a1;height:135px;">
+<div style="float:left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/c1.jpg" width="433" height="132"></div>
+<div style="padding-top:50px;margin-left:500px;color:white;font-size:24px">
+<div style="float:left;"><a href="index.html">网站首页<br/>&nbsp;&nbsp;&nbsp;<span style="font-size:16px">Home</span>&nbsp;&nbsp;</a></div>
+<div style="float:left;margin-left:40px;"><a href="two.html">成员介绍<br/>&nbsp;&nbsp;<span style="font-size:16px">Members</span>&nbsp;&nbsp;</a></div>
+<div style="float:left;margin-left:40px;"><a href="3.html">&nbsp;&nbsp;师资队伍<br/><span style="font-size:16px">Scientific research</span>&nbsp;&nbsp;</a></div>
+<div style="float:left;margin-left:20px;"><a href="7.html">&nbsp;&nbsp;专业课程<br/><span style="font-size:16px">Professional course</span>&nbsp;&nbsp;</a></div>
+<div style="float:left;margin-left:20px;" id="main"><a href="6.html">&nbsp;&nbsp;&nbsp;课程资源<br/><span style="font-size:16px">Curriculum resources</span>&nbsp;&nbsp;</a></div>
+<div style="float:left;margin-left:30px;"><a href="8.html">&nbsp;合作交流<br/>&nbsp;&nbsp;<span style="font-size:16px">Cooperatio</span>&nbsp;&nbsp;</a></div>
+</div>
+</div>
+<div id="decoroll2" style="width:100%;height:900px;margin-top:-6px;;">
+<div id="decoimg_a2"  style="width:100%;height:900px;">
+<div class="decoimg_b2" style="width:100%;height:900px;">
+<img src="img/1.jpg" style="width:100%;height:900px;">
+</div>
+<div class="decoimg_b2" style="width:100%;height:900px;">
+<img src="img/2.jpg" style="width:100%;height:900px;">
+</div>
+<div class="decoimg_b2" style="width:100%;height:900px;">
+<img src="img/3.jpg" style="width:100%;height:900px;">
+</div>
+<div class="decoimg_b2" style="width:100%;height:900px;">
+<img src="img/4.jpg" style="width:100%;height:900px;">
+</div>
+</div>
+<ul id="deconum2" class="num_a2" style="margin-top:250px;">
+<li><a href="javascript:void(0)" hidefocus="true" target="_self"></a></li>
+<li><a href="javascript:void(0)" hidefocus="true" target="_self"></a></li>
+<li><a href="javascript:void(0)" hidefocus="true" target="_self"></a></li>
+<li><a href="javascript:void(0)" hidefocus="true" target="_self"></a></li>
+</ul>
+<br /> 
+
+</body>
+</html>
